@@ -12,3 +12,65 @@
  *
  */
  @import "bootstrap";
+ @import url('https://fonts.googleapis.com/css?family=Black+Han+Sans');
+
+
+#user_email.form-control {
+  width: 270px;
+}
+
+#user_password.form-control {
+  width: 270px;
+}
+
+.container.login {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 300px;
+  margin-top: 50px;
+  border: 1px solid black;
+  border-radius: 5px;
+  box-shadow: 10px 10px 5px grey;
+}
+
+.container.signup {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 300px;
+  margin-top: 50px;
+  border: 1px solid black;
+  border-radius: 5px;
+  box-shadow: 10px 10px 5px grey;
+}
+
+h2.signup {
+  text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+  font-family: 'Black Han Sans', sans-serif;
+}
+
+.container.forgot {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 300px;
+  margin-top: 50px;
+  border: 1px solid black;
+  border-radius: 5px;
+  box-shadow: 10px 10px 5px grey;
+}
+
+.container.edit {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 300px;
+  margin-top: 50px;
+  border: 1px solid black;
+  border-radius: 5px;
+  box-shadow: 10px 10px 5px grey;
+}
+
+.back.edit {
+  margin-left: 410px;
+  text-decoration: none;
+}
+
+
