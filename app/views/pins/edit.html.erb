@@ -1,0 +1,22 @@
+<div class="card edit pin">
+
+  <div class="card-header">
+    <h1>Editing Pin</h1>
+  </div>
+
+  <div class="card-body">
+
+  <%= render 'form', pin: @pin %>
+
+   </div>
+  
+  <div class="card-footer text-muted">
+    <%= link_to 'Show', @pin, class: "btn btn-outline-primary btn-sm" %> 
+    <%= link_to 'Back', pins_path, class: "btn btn-outline-primary btn-sm" %> 
+  </div>
+
+</div>
+
+
+
+
