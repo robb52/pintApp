@@ -10,6 +10,7 @@
  * files in this directory. Styles in this file should be added after the last require_* statement.
  * It is generally better to create a new file per style scope.
  *
+ *= require 'masonry/transitions'
  */
  @import "bootstrap";
  @import url('https://fonts.googleapis.com/css?family=Black+Han+Sans');
@@ -90,8 +91,10 @@ h2.signup {
   box-shadow: 10px 10px 5px grey;
 }
 
-
-
+.card {
+  margin: 10px;
+  box-shadow: 10px 10px 5px grey;
+}
 
 
 

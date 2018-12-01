@@ -1,14 +1,23 @@
-<% @pins.each do |pin| %>
+<div id="pins" class="transitions-enabled">
 
- <%= link_to image_tag(pin.image.url(:medium)), pin %><br/>
- <%= pin.description %><br/>
- <%= pin.user.name if pin.user %>
+  <% @pins.each do |pin| %>
 
-<p>
- <% if pin.user == current_user %>
-   <%= link_to 'Edit', edit_pin_path(pin) %>
-   <%= link_to 'Delete', pin, method: :delete, data: { confirm: 'Are you sure?' } %>
- <% end %>
-</p>
+    <div class="box">
+      <div class="card">  
+          <%= link_to image_tag(pin.image.url(:medium)), pin %>
+        <div class="card-body">
+           <%= pin.description %><br/>
+           <%= pin.user.name if pin.user %>
+          <p>
+           <% if pin.user == current_user %>
+             <%= link_to 'Edit', edit_pin_path(pin), class: "btn btn-primary btn-sm" %>
+             <%= link_to 'Delete', pin, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-danger btn-sm" %>
+           <% end %>
+          </p>
+        </div>
+      </div>   
+    </div>
 
-<% end %>
+  <% end %>
+
+</div>
