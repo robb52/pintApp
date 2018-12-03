@@ -13,7 +13,7 @@
  *= require 'masonry/transitions'
  */
  @import "bootstrap";
- @import url('https://fonts.googleapis.com/css?family=Black+Han+Sans');
+ @import url('https://fonts.googleapis.com/css?family=Black+Han+Sans|Merriweather+Sans|Shrikhand|Vidaloka');
 
 
 #user_email.form-control {
@@ -92,14 +92,102 @@ h2.signup {
 }
 
 .card {
+  border-radius: 10px;
   margin: 10px;
   box-shadow: 10px 10px 5px grey;
 }
 
+.card.show {
+  margin-top: 40px;
+  box-shadow: 10px 10px 5px grey;
+  margin-left: 400px;
+}
 
+.container {
+  margin-top: 30px;
+  margin-left: 0 auto;
+}
 
+.navbar.navbar-expand-lg {
+  background-color: #06F7CF;
+  padding: 10px;
+}
 
+a {
+  text-decoration: none!important;
+}
 
+.collapse.navbar-collapse {
+  text-decoration: none;
+}
+
+.pin {
+  color: #F77F06;
+  text-shadow: 3px 2px red;
+  margin-left: 100px;
+  font-size: 50px;
+  font-family: 'Shrikhand', cursive;
+}
+
+.link {
+  padding-right: 20px;
+  font-family: 'Vidaloka', serif;
+  font-size: 20px;
+  color: black;
+}
+
+img {
+  border-radius: 10px;
+}
+
+.card-body.add {
+  text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+  font-family: 'Black Han Sans', sans-serif;
+  color: black;
+  font-size: 30px;
+}
+
+.card-header {
+  text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+  font-family: 'Black Han Sans', sans-serif;
+  color: black;
+}
+
+#pin_image.form-control {
+  font-size: 15px;
+}
+
+.btn.btn-outline-primary.btn-sm {
+ font-family: 'Vidaloka', serif;
+ text-shadow: none;
+}
+
+.card-body.edit {
+  text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+  font-family: 'Black Han Sans', sans-serif;
+  color: black;
+  font-size: 30px;
+}
+
+h2.login {
+  text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+  font-family: 'Black Han Sans', sans-serif;
+}
+
+h2.forgot {
+  text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+  font-family: 'Black Han Sans', sans-serif;
+}
+
+h2.edit.devise {
+  text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+  font-family: 'Black Han Sans', sans-serif;
+}
+
+.jumbotron {
+  background-color: #AEAFA9;
+  font-family: 'Merriweather Sans', sans-serif;
+}
 
 
 

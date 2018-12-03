@@ -1,31 +1,31 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <div class="container">
+<nav class="navbar navbar-expand-lg">
+ 
     <div class="navbar-brand">
-      <%= link_to "Pin Clone", root_path %></li>
+      <%= link_to "Pin It", root_path, class: "pin" %></li>
     </div>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <div class="collapse navbar-collapse">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item">
 
-          <%= link_to "Home", root_path %>
-          <%= link_to "About Me", home_about_path %>
+          <%= link_to "Home", root_path, class: "link" %>
+          <%= link_to "About Me", home_about_path, class: "link" %>
 
           <% if user_signed_in? %>
-            <%= link_to "Add Pin", new_pin_path %>
-            <%= link_to "List Pins", pins_path %>
-            <%= link_to "Logout", destroy_user_session_path, method: :delete %>
-            <%= link_to "Edit Profile", edit_user_registration_path %>
+            <%= link_to "Add Pin", new_pin_path, class: "link" %>
+            <%= link_to "List Pins", pins_path, class: "link" %>
+            <%= link_to "Logout", destroy_user_session_path, method: :delete, class: "link" %>
+            <%= link_to "Edit Profile", edit_user_registration_path, class: "link" %>
           <% else %>
-            <%= link_to "Login", new_user_session_path %>
-            <%= link_to "Join", new_user_registration_path %>  
+            <%= link_to "Login", new_user_session_path, class: "link" %>
+            <%= link_to "Join", new_user_registration_path, class: "link" %>  
           <% end %>      
       
         </li>
       </ul>
     </div>
-  </div>
+  
 </nav>

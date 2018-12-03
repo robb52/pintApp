@@ -1,6 +1,6 @@
-<div class="jumbotron  jumbotron-fluid">
-  <div class="container jumbo">
-   <h1>Welcome to Pin App</h1>
+<div class="jumbotron">
+  <div class="container jumbo text-center">
+   <h1>Welcome to Pin It</h1>
 
     <% if user_signed_in? %>
       <%= link_to "Logout", destroy_user_session_path, method: :delete, class: "btn btn-outline-primary" %>
@@ -13,6 +13,7 @@
 
   </div>
 </div>
+
 
 
 
