@@ -15,6 +15,9 @@
  @import "bootstrap";
  @import url('https://fonts.googleapis.com/css?family=Black+Han+Sans|Merriweather+Sans|Shrikhand|Vidaloka');
 
+body {
+  background-color: #E9E9E9;
+}
 
 #user_email.form-control {
   width: 270px;
@@ -95,6 +98,8 @@ h2.signup {
   border-radius: 10px;
   margin: 10px;
   box-shadow: 10px 10px 5px grey;
+  font-family: 'Merriweather Sans', sans-serif;
+
 }
 
 .card.show {
@@ -188,6 +193,7 @@ h2.edit.devise {
   background-color: #AEAFA9;
   font-family: 'Merriweather Sans', sans-serif;
 }
-
-
+.pagination {
+  margin-left: 450px;
+}
 

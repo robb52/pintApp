@@ -19,6 +19,7 @@ gem 'paperclip', '~> 6.1'
 gem 'masonry-rails', '~> 0.2.4'
 gem 'jquery-masonry-rails', '~> 4.1'
 gem 'jquery-turbolinks'
+gem 'kaminari', '~> 1.1', '>= 1.1.1'
 
 
 group :development, :test do
